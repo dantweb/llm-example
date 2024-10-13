@@ -24,10 +24,10 @@ def main():
 
     # Import the chosen service
     if args.service == 'gpt2_service':
-        from service.gpt2_service import GPT2Service as SelectedService
+        from src.service.gpt2_service import GPT2Service as SelectedService
         model_name = 'gpt2'
     elif args.service == 'langmodel_service':
-        from service.langmodel_service import LangModelService as SelectedService
+        from src.service.langmodel_service import LangModelService as SelectedService
         model_name = 'microsoft/DialoGPT-small'
 
     # Generate a unique user ID for the session
